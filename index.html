@@ -1,16 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<title>Viaje a Ushuaia</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(194, 156, 229);
+    margin: 0;
+    padding: 20px;
+}
+h1 {color: #000000;}
+.btn-iniciar-viaje {
+    background-color: #00ffd0;
+    color: rgb(0, 0, 0);
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn-iniciar-viaje:hover {background-color: #0056b3;}
+    </style>
 </head>
-<body style="background-color: rgb(194, 156, 229);">
-    <br>
-
-    <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">¿Viaje Express?</h1>
-    <button onclick="iniciarViaje()">Iniciar Viaje</button>
-
+<body>
+    <h1>¿Hacemos un viajecito?</h1>
+    <button class="btn-iniciar-viaje">Iniciar Viaje</button>
     <script src="./main.js"></script>
 </body>
 </html>
+
