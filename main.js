@@ -1,5 +1,5 @@
 
-function Viaje() {
+function iniciarViaje() {
 const confirmar = confirm ("¿Te gustaría viajar a Ushuaia?");
 
 if (confirmar) {
@@ -21,15 +21,21 @@ if (!isNaN(edad) && edad >= 18) {console.log ("Podemos seguir");
 } else { 
     alert ("Necesitas autorizacion de tu padre, madre o tutor. ¡Hasta la proxima"); return;
  }
- let actividad;
+
 const actividades = ["caminatas", "catamaran", "paseo en tren"];
+let opciones = "¿Qué actividad te gustaría realizar? Elige entre:\n";
+for (let i = 0; i < actividades.length; i++) {
+    opciones += (i + 1) + ". " + actividades[i] + "\n";
+}
+let actividad;
 do {
-     actividad = prompt("¿Qué actividad te gustaría realizar? Elige entre 'caminatas', 'catamaran' o 'paseo en tren'.");
-if (!actividades.includes(actividad.trim().toLowerCase())) {
-    alert("Opción no válida. Por favor, elige entre 'caminatas', 'catamarán' o 'paseo en tren'.");
-            }
+    actividad = prompt(opciones);
+    if (!actividades.includes(actividad.trim().toLowerCase())) {
+        alert("Opción no válida. Por favor, elige una opción de la lista y escribela.");
+    }
 } while (!actividades.includes(actividad.trim().toLowerCase()));
 
 alert ("Genial ¡Nos vemos pronto!" + " " + respuesta + " " +"¡Buen Viaje!" ); 
 }
-Viaje ();
+
+document.getElementById('iniciarViaje').addEventListener('click', Viaje);
