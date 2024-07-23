@@ -1,9 +1,7 @@
 
+let confirmar = confirm ("¿Te gustaría viajar a Ushuaia?") ;
 
-let edad = 24
+let respuesta = prompt ("¡Genial! ¿Cómo te llamas?");
+let edad = prompt ("¿Sos mayor de edad?");
 
-console.log(edad)
-
-let nombre = "nacho"
-edad = 25
-console.log(edad)
+alert ("¡Nos vemos pronto! ¡Buen Viaje!"  + " "respuesta);
