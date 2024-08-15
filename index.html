@@ -3,31 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Viaje a Ushuaia</title>
-    <style>
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: rgb(194, 156, 229);
-    margin: 0;
-    padding: 20px;
-}
-h1 {color: #000000;}
-.btn-iniciar-viaje {
-    background-color: #00ffd0;
-    color: rgb(0, 0, 0);
-    padding: 15px 30px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-}
-.btn-iniciar-viaje:hover {background-color: #0056b3;}
-    </style>
+    <title>Viaje a Ushuaia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>¿Hacemos un viajecito?</h1>
-    <button class="btn-iniciar-viaje">Iniciar Viaje</button>
-    <script src="./main.js"></script>
+    <header>
+        <h1>Viaje a Ushuaia</h1>
+    </header>
+    <main>
+        <section id="excursiones">
+            <h2>Propuestas de Excursiones</h2>
+            <div id="excursion-list" class="centered"></div>
+        </section>
+        <section id="caminatas">
+            <h2>Propuestas de Caminatas</h2>
+            <div id="caminata-list" class="centered"></div>
+        </section>
+        
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="carrito-list" class="centered"></ul>
+            <div id="carrito-contador">Carrito: 0 items</div>
+            <div id="carrito-total" class="total-container">Total: $0</div>
+            <div class="button-container">
+                <button id="vaciar-carrito">Vaciar Carrito</button>
+                <button id="contratar">Contratar</button>
+            </div>
+        </section>
+    </main>
+   
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <img id="modal-image" src="" alt="">
+        </div>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
-
