@@ -5,10 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Viaje a Ushuaia</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <header>
         <h1>Viaje a Ushuaia</h1>
+        <div id="carrito-icon" class="carrito-icon">
+            <img src="images/carrito-icono.png" alt="Carrito">
+            <span id="carrito-contador">0</span>
+        </div>
     </header>
     <main>
         <section id="excursiones">
@@ -20,10 +25,10 @@
             <div id="caminata-list" class="centered"></div>
         </section>
         
-        <section id="carrito">
+        <section id="carrito" class="carrito">
+            <button id="carrito-close" class="carrito-close">&times;</button>
             <h2>Carrito de Compras</h2>
             <ul id="carrito-list" class="centered"></ul>
-            <div id="carrito-contador">Carrito: 0 items</div>
             <div id="carrito-total" class="total-container">Total: $0</div>
             <div class="button-container">
                 <button id="vaciar-carrito">Vaciar Carrito</button>
@@ -37,9 +42,11 @@
             <span class="close">&times;</span>
             <h3 id="modal-title"></h3>
             <p id="modal-description"></p>
-            <img id="modal-image" src="" alt="">
+            <button id="modal-confirm">Confirmar</button>
         </div>
     </div>
     <script src="main.js"></script>
+    <script src="carrito.js"></script>
+    <script src="card.js"></script>
 </body>
 </html>
