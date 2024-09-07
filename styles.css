@@ -25,6 +25,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: stretch;
     gap: 1em;
 }
 
@@ -37,7 +38,9 @@ h2 {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     width: calc(25% - 1em);
-    height: 400px;
+    height: auto;
+    min-height: 400px;
+    margin: auto;
     position: relative;
 }
 
@@ -253,6 +256,12 @@ h2 {
     padding: 0.5em 1em;
     text-align: center;
     margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 1em);
+    }
 }
 
 @media (max-width: 768px) {

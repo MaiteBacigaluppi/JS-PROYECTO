@@ -4,25 +4,25 @@
         "nombre": "Excursión al Glaciar Martial",
         "descripcion": "Una caminata impresionante hacia el Glaciar Martial, con vistas espectaculares.",
         "imagen": "images/glaciar-martial.jpg",
-        "precio": 4000
+        "precio": 10000
       },
       {
         "nombre": "Tour por el Parque Nacional",
         "descripcion": "Explora la flora y fauna única del Parque Nacional Tierra del Fuego.",
         "imagen": "images/parque-nacional.jpg",
-        "precio": 5000
+        "precio": 15000
       },
       {
         "nombre": "Visita al Lago Escondido",
         "descripcion": "Un recorrido escénico al hermoso Lago Escondido.",
         "imagen": "images/lago-escondido.jpg",
-        "precio": 6000
+        "precio": 30000
       },
       {
         "nombre": "Trekking al Ojo del Albino",
         "descripcion": "Todo un reto realizar la escursión al Glaciar Ojo del Albino.",
         "imagen": "images/ojo-del-albino.jpg",
-        "precio": 7000
+        "precio": 50000
       }
     ],
     "caminatas": [
@@ -30,25 +30,25 @@
         "nombre": "Trekking a la Laguna Turquesa",
         "descripcion": "Un desafiante pero rapido ascenso a la Laguna Turquesa. Difucultad Baja.",
         "imagen": "images/laguna-turquesa.jpg",
-        "precio": 3000
+        "precio": 10000
       },
       {
         "nombre": "Trekking a la Laguna Esmeralda",
         "descripcion": "Una caminata hacia la hermosa Laguna Esmeralda. Dificultad Baja.",
         "imagen": "images/laguna-esmeralda.jpg",
-        "precio": 4000
+        "precio": 20000
       },
       {
         "nombre": "Trekking a los 5 hermanos",
         "descripcion": "Un hermoso paseo entre las montañas fueguinas. Dificultad Media.",
         "imagen": "images/5-hermanos.jpg",
-        "precio": 4500
+        "precio": 40000
       },
       {
         "nombre": "Trekking a la Laguna del Domo Blanco",
         "descripcion": "Desafiante trekking por el glaciar hacia el incleíble Domo Blanco. Dificultad Alta.",
         "imagen": "images/domo-blanco.jpg",
-        "precio": 5000
+        "precio": 60000
       }
     ]
   }

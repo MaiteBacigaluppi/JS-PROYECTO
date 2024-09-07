@@ -107,7 +107,7 @@ document.getElementById('contratar').onclick = function() {
         if (result.isConfirmed) {
             Swal.fire(
                 'Compra confirmada',
-                `Gracias ${result.value.nombre}, hemos enviado la confirmación a ${result.value.email}`,
+                `Gracias ${result.value.nombre}, hemos enviado la confirmación de contratación a ${result.value.email}`,
                 'success'
             );
             carrito = [];
